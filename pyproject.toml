@@ -1,0 +1,23 @@
+[project]
+name = "desafio-a2a-com-mcp"
+version = "1.0.0"
+description = "A Ponte: servidor MCP de salas e agente A2A que o consome como host MCP"
+requires-python = ">=3.10"
+# Versoes travadas. Nenhum SDK de provedor de LLM: o agente decide por regra.
+dependencies = [
+    "mcp==2.3.0",
+    "mcp-types==2.3.0",
+    "cryptography==50.0.1",
+    "pydantic==2.13.5",
+    "starlette==1.7.0",
+    "uvicorn==0.54.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# Os dois processos rodam como scripts (servidor-mcp/servidor.py e agente/agente.py);
+# nao ha pacote para instalar, so as dependencias.
+packages = []
