@@ -12,7 +12,7 @@ O agente não usa LLM: o pedido tem formato fixo e cada decisão é por regra. R
 Pré-requisito: Python 3.10 ou superior.
 
 ```bash
-git clone https://github.com/<seu-usuario>/desafio-a2a-com-mcp.git
+git clone https://github.com/thalitabarbosa/desafio-a2a-com-mcp.git
 cd desafio-a2a-com-mcp
 
 python3 -m venv .venv
